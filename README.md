@@ -1,4 +1,4 @@
-MillionArthurTool
+﻿MillionArthurTool
 =================
 
 MillionArthurTool for japan
