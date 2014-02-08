@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="2.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2C55D7D2-B971-42C6-9302-3FF6BCA01E5A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>MillionArthurTool</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="MillionArthurTool\BattleLog.cs" />
+    <Compile Include="MillionArthurTool\BattleTurn.cs" />
+    <Compile Include="MillionArthurTool\BingdingText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MillionArthurTool\Buff.cs" />
+    <Compile Include="MillionArthurTool\cardatsort.cs" />
+    <Compile Include="MillionArthurTool\cardchose.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MillionArthurTool\carddeck.cs" />
+    <Compile Include="MillionArthurTool\cardhpsort.cs" />
+    <Compile Include="MillionArthurTool\cardidsort.cs" />
+    <Compile Include="MillionArthurTool\cardlvsort.cs" />
+    <Compile Include="MillionArthurTool\cards.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MillionArthurTool\CardSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MillionArthurTool\ComboBoxItem.cs" />
+    <Compile Include="MillionArthurTool\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MillionArthurTool\Log.cs" />
+    <Compile Include="MillionArthurTool\playerrank.cs" />
+    <Compile Include="MillionArthurTool\Program.cs" />
+    <Compile Include="MillionArthurTool\rewardbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MillionArthurTool\Properties\Resources.cs" />
+    <Compile Include="MillionArthurTool\Properties\Settings.cs" />
+    <EmbeddedResource Include="MillionArthurTool.Form1.resources" />
+    <EmbeddedResource Include="MillionArthurTool.Properties.Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+</Project>
