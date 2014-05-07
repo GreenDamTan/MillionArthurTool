@@ -107,7 +107,7 @@
         private DataGridView dataGridView2;
         private DataGridView dataGridView3;
         private DataGridView dataGridView4;
-        private string DefaultUserAgent = "Million/250 (aalgt; aalgt; 4.1.2) sumsung/aalgt/aalgt:4.1.2/JZ254K/E410LKLJME2:user/release-keys GooglePlay";
+        private string DefaultUserAgent = "Million/310 (aalgt; aalgt; 4.1.2) sumsung/aalgt/aalgt:4.1.2/JZ254K/E410LKLJME2:user/release-keys GooglePlay";
         private DateTime dtnew;
         private DateTime dtOld;
         private double dWin;
@@ -5008,8 +5008,8 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(1022, 16);
             this.label10.TabIndex = 5;
-            this.label10.Text = "当前版本的本工具为debug版,各种崩溃.对应日服GP250版扩散性MA 如果更新找咱吧! 编译时间20140206 维护QQ群321460857 现在是初版 王" +
-                "师傅为何弃坑 本程序授权有时间限制学习丧病，虽然不知道干嘛的";
+            this.label10.Text = "当前版本的本工具为debug版,各种崩溃.对应日服GP310版扩散性MA 如果更新找咱吧! 编译时间20140507 维护QQ群: 现在是初版 王" +
+                "师傅为何弃坑";
             // 
             // Form1
             // 
@@ -5520,7 +5520,7 @@
                 this.iServer = 0;
                 this.GetApple();
                 this.key0 = this.baseKey + "0000000000000000";
-                this.DefaultUserAgent = "Million/250 (aalgt; aalgt; 4.1.2) sumsung/aalgt/aalgt:4.1.2/JZ254K/E410LKLJME2:user/release-keys GooglePlay";
+                this.DefaultUserAgent = "Million/310 (aalgt; aalgt; 4.1.2) sumsung/aalgt/aalgt:4.1.2/JZ254K/E410LKLJME2:user/release-keys GooglePlay";
                 this.szhost = "web.million-arthurs.com";
                 this.szhostport = "web.million-arthurs.com";
                 this.comboBox2.Visible = true;
@@ -5911,7 +5911,7 @@
 
         private void threadMain()
         {
-            this.actionlog.Text = this.actionlog.Text + "这个东西对应gooleplay版250,开始登陆,邮箱更新找我GreenDamTan@github\r\n";
+            this.actionlog.Text = this.actionlog.Text + "这个东西对应gooleplay版310,开始登陆,邮箱更新找我GreenDamTan@github\r\n";
             this.radioButton8.Enabled = false;
             
             if (!this.Login())
